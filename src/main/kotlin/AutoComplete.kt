@@ -144,7 +144,7 @@ fun matchLibrary(query: String, libs: List<String>): Map<String, Double> {
 }
 
 fun main(args: Array<String>) {
-    val query = "class" //args[0]
+    val query = "AbstractCol"//args[0]
     val libs = getLibs()
     libs.forEach { (name, src) ->
         if (src.contains(query)) {
