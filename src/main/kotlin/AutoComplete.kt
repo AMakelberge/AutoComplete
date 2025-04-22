@@ -144,11 +144,12 @@ fun matchLibrary(query: String, libs: List<String>): Map<String, Double> {
 }
 
 fun main(args: Array<String>) {
-    val query = "AbstractCol"//args[0]
+    val query = args[0]
     val libs = getLibs()
     libs.forEach { (name, src) ->
         if (src.contains(query)) {
             println("Found in $name.kt:\n$src")
         }
     }
+    println(libs)
 }
